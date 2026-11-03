@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>DeepCoolDisplay</AssemblyName>
+    <RootNamespace>DeepCoolDisplay</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <Version>1.0.0</Version>
+    <Authors>Rik Vanden Boer</Authors>
+    <Product>DeepCoolDisplay</Product>
+    <Description>Lightweight driver for DeepCool LD/CH digital displays on Windows</Description>
+    <Copyright>Copyright (C) 2026 Rik Vanden Boer, GPL-3.0</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HidSharp" Version="2.6.4" />
+    <PackageReference Include="LibreHardwareMonitorLib" Version="0.9.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="reference\**" />
+    <None Remove="reference\**" />
+  </ItemGroup>
+
+</Project>
